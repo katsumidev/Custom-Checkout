@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <script>
+      !(function (w, d, t) {
+        w.TiktokAnalyticsObject = t;
+        var ttq = (w[t] = w[t] || []);
+        (ttq.methods = [
+          "page",
+          "track",
+          "identify",
+          "instances",
+          "debug",
+          "on",
+          "off",
+          "once",
+          "ready",
+          "alias",
+          "group",
+          "enableCookie",
+          "disableCookie",
+        ]),
+          (ttq.setAndDefer = function (t, e) {
+            t[e] = function () {
+              t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+            };
+          });
+        for (var i = 0; i < ttq.methods.length; i++)
+          ttq.setAndDefer(ttq, ttq.methods[i]);
+        (ttq.instance = function (t) {
+          for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++)
+            ttq.setAndDefer(e, ttq.methods[n]);
+          return e;
+        }),
+          (ttq.load = function (e, n) {
+            var i = "https://analytics.tiktok.com/i18n/pixel/events.js";
+            (ttq._i = ttq._i || {}),
+              (ttq._i[e] = []),
+              (ttq._i[e]._u = i),
+              (ttq._t = ttq._t || {}),
+              (ttq._t[e] = +new Date()),
+              (ttq._o = ttq._o || {}),
+              (ttq._o[e] = n || {});
+            var o = document.createElement("script");
+            (o.type = "text/javascript"),
+              (o.async = !0),
+              (o.src = i + "?sdkid=" + e + "&lib=" + t);
+            var a = document.getElementsByTagName("script")[0];
+            a.parentNode.insertBefore(o, a);
+          });
+        ttq.page();
+      })(window, document, "ttq");
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js"
+      crossorigin
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"
+      crossorigin
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js"
+      crossorigin
+    ></script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1600834157097074&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <title>Moon Coded | Checkout</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
